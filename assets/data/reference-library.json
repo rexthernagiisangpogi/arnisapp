@@ -1,0 +1,594 @@
+[
+  {
+    "skill_id": "strike-1",
+    "category": "Strikes",
+    "name": "Strike 1",
+    "phases": [
+      {
+        "phase": "starting",
+        "description": "Starting position reference pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Draft: set after expert review",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Body fully visible; stance points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      },
+      {
+        "phase": "execution",
+        "description": "Execution reference pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Draft: set after expert review",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Strike path points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      },
+      {
+        "phase": "final",
+        "description": "Final position reference pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Draft: set after expert review",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Recovery points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      }
+    ]
+  },
+  {
+    "skill_id": "strike-2",
+    "category": "Strikes",
+    "name": "Strike 2",
+    "phases": [
+      {
+        "phase": "starting",
+        "description": "Starting position reference pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Draft: set after expert review",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Body fully visible; stance points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      },
+      {
+        "phase": "execution",
+        "description": "Execution reference pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Draft: set after expert review",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Strike path points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      },
+      {
+        "phase": "final",
+        "description": "Final position reference pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Draft: set after expert review",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Recovery points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      }
+    ]
+  },
+  {
+    "skill_id": "strike-3",
+    "category": "Strikes",
+    "name": "Strike 3",
+    "phases": [
+      {
+        "phase": "starting",
+        "description": "Starting position reference pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Draft: set after expert review",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Body fully visible; stance points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      },
+      {
+        "phase": "execution",
+        "description": "Execution reference pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Draft: set after expert review",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Strike path points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      },
+      {
+        "phase": "final",
+        "description": "Final position reference pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Draft: set after expert review",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Recovery points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      }
+    ]
+  },
+  {
+    "skill_id": "strike-4",
+    "category": "Strikes",
+    "name": "Strike 4",
+    "phases": [
+      {
+        "phase": "starting",
+        "description": "Starting position reference pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Draft: set after expert review",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Body fully visible; stance points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      },
+      {
+        "phase": "execution",
+        "description": "Execution reference pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Draft: set after expert review",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Strike path points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      },
+      {
+        "phase": "final",
+        "description": "Final position reference pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Draft: set after expert review",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Recovery points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      }
+    ]
+  },
+  {
+    "skill_id": "ready-stance",
+    "category": "Stances",
+    "name": "Ready stance",
+    "phases": [
+      {
+        "phase": "single",
+        "description": "Single stance reference pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Not applicable",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Balance and posture points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      }
+    ]
+  },
+  {
+    "skill_id": "forward-stance",
+    "category": "Stances",
+    "name": "Forward stance",
+    "phases": [
+      {
+        "phase": "single",
+        "description": "Single stance reference pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Not applicable",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Balance and posture points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      }
+    ]
+  },
+  {
+    "skill_id": "basic-blocks",
+    "category": "Blocks",
+    "name": "Basic blocks",
+    "phases": [
+      {
+        "phase": "starting",
+        "description": "Starting position reference pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Draft: set after expert review",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Guard position points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      },
+      {
+        "phase": "execution",
+        "description": "Execution reference pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Draft: set after expert review",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Block path points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      },
+      {
+        "phase": "final",
+        "description": "Final position reference pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Draft: set after expert review",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Recovery points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      }
+    ]
+  },
+  {
+    "skill_id": "forward-step",
+    "category": "Footwork",
+    "name": "Forward step",
+    "phases": [
+      {
+        "phase": "starting",
+        "description": "Starting foot position pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Not applicable",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Balance points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      },
+      {
+        "phase": "execution",
+        "description": "Step execution pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Not applicable",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Travel direction points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      },
+      {
+        "phase": "final",
+        "description": "Final foot position pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Not applicable",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Balance recovery points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      }
+    ]
+  },
+  {
+    "skill_id": "backward-step",
+    "category": "Footwork",
+    "name": "Backward step",
+    "phases": [
+      {
+        "phase": "starting",
+        "description": "Starting foot position pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Not applicable",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Balance points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      },
+      {
+        "phase": "execution",
+        "description": "Step execution pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Not applicable",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Travel direction points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      },
+      {
+        "phase": "final",
+        "description": "Final foot position pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Not applicable",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Balance recovery points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      }
+    ]
+  },
+  {
+    "skill_id": "side-step",
+    "category": "Footwork",
+    "name": "Side step",
+    "phases": [
+      {
+        "phase": "starting",
+        "description": "Starting foot position pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Not applicable",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Balance points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      },
+      {
+        "phase": "execution",
+        "description": "Step execution pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Not applicable",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Travel direction points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      },
+      {
+        "phase": "final",
+        "description": "Final foot position pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Not applicable",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Balance recovery points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      }
+    ]
+  },
+  {
+    "skill_id": "triangle-step",
+    "category": "Footwork",
+    "name": "Triangle stepping",
+    "phases": [
+      {
+        "phase": "starting",
+        "description": "Starting foot position pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Not applicable",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Triangle path points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      },
+      {
+        "phase": "execution",
+        "description": "Step execution pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Not applicable",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Triangle path points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      },
+      {
+        "phase": "final",
+        "description": "Final foot position pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Not applicable",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Balance recovery points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      }
+    ]
+  },
+  {
+    "skill_id": "strike-stance",
+    "category": "Coordination",
+    "name": "Strike + stance",
+    "phases": [
+      {
+        "phase": "starting",
+        "description": "Combined start position pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Draft: set after expert review",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Combined movement points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      },
+      {
+        "phase": "execution",
+        "description": "Combined execution pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Draft: set after expert review",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Timing and alignment points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      },
+      {
+        "phase": "final",
+        "description": "Combined recovery pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Draft: set after expert review",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Final balance points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      }
+    ]
+  },
+  {
+    "skill_id": "strike-footwork",
+    "category": "Coordination",
+    "name": "Strike + footwork",
+    "phases": [
+      {
+        "phase": "starting",
+        "description": "Combined start position pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Draft: set after expert review",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Combined movement points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      },
+      {
+        "phase": "execution",
+        "description": "Combined execution pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Draft: set after expert review",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Timing and alignment points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      },
+      {
+        "phase": "final",
+        "description": "Combined recovery pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Draft: set after expert review",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Final balance points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      }
+    ]
+  },
+  {
+    "skill_id": "complete-sequence",
+    "category": "Coordination",
+    "name": "Complete sequence",
+    "phases": [
+      {
+        "phase": "starting",
+        "description": "Sequence start reference pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Draft: set after expert review",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Sequence start points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      },
+      {
+        "phase": "execution",
+        "description": "Sequence execution reference pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Draft: set after expert review",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Sequence coordination points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      },
+      {
+        "phase": "final",
+        "description": "Sequence final reference pending instructor image.",
+        "image_placeholder": "Reference image not supplied",
+        "key_points": {
+          "arm_angle_range": "Draft: set after expert review",
+          "foot_spacing": "Draft: set after expert review",
+          "alignment": "Final balance points pending review"
+        },
+        "validated": false,
+        "validated_by": null,
+        "validated_at": null
+      }
+    ]
+  }
+]

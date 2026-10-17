@@ -1,0 +1,205 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isOwner(userId) {
+      return request.auth != null && request.auth.uid == userId;
+    }
+
+    function isTrustedTeacher() {
+      return request.auth != null && request.auth.token.role == 'teacher';
+    }
+
+    function isAssignedTeacher(studentId) {
+      return isTrustedTeacher()
+        && exists(/databases/$(database)/documents/student_assignments/$(studentId))
+        && get(/databases/$(database)/documents/student_assignments/$(studentId)).data.teacher_id == request.auth.uid;
+    }
+
+    function validUserDocument() {
+      let data = request.resource.data;
+      return data.keys().hasAll(['name', 'email', 'role', 'createdAt', 'updatedAt'])
+        && data.keys().hasOnly(['name', 'email', 'role', 'createdAt', 'updatedAt'])
+        && data.name is string
+        && data.name.size() > 0
+        && data.name.size() <= 120
+        && data.email is string
+        && data.email == request.auth.token.email
+        && data.role in ['student', 'teacher']
+        && data.createdAt is timestamp
+        && data.updatedAt is timestamp;
+    }
+
+    match /users/{userId} {
+      allow read: if isOwner(userId);
+      allow create: if isOwner(userId)
+        && validUserDocument()
+        && request.resource.data.createdAt == request.time
+        && request.resource.data.updatedAt == request.time;
+      allow update: if isOwner(userId)
+        && validUserDocument()
+        && request.resource.data.createdAt == resource.data.createdAt
+        && request.resource.data.role == resource.data.role
+        && request.resource.data.updatedAt == request.time;
+      allow delete: if isOwner(userId);
+    }
+
+    function validProfileDocument(userId) {
+      let data = request.resource.data;
+      return data.keys().hasAll(['user_id', 'role', 'full_name', 'grade', 'section', 'created_at'])
+        && data.keys().hasOnly(['user_id', 'role', 'full_name', 'grade', 'section', 'created_at'])
+        && data.user_id == userId
+        && data.role in ['student', 'teacher']
+        && data.full_name is string
+        && data.full_name.size() > 0
+        && data.full_name.size() <= 120
+        && data.grade is string
+        && data.section is string
+        && data.created_at is timestamp;
+    }
+
+    match /profiles/{userId} {
+      allow read: if isOwner(userId) || isAssignedTeacher(userId);
+      allow create: if isOwner(userId)
+        && validProfileDocument(userId)
+        && request.resource.data.created_at == request.time;
+      allow update: if isOwner(userId)
+        && validProfileDocument(userId)
+        && request.resource.data.user_id == resource.data.user_id
+        && request.resource.data.role == resource.data.role
+        && request.resource.data.created_at == resource.data.created_at;
+      allow delete: if isOwner(userId) && isTrustedTeacher();
+    }
+
+    function validStudentRecord() {
+      let data = request.resource.data;
+      return data.keys().hasAll(['created_by', 'email', 'full_name', 'grade', 'section', 'status', 'created_at', 'updated_at'])
+        && data.keys().hasOnly(['created_by', 'email', 'full_name', 'grade', 'section', 'status', 'created_at', 'updated_at'])
+        && data.created_by == request.auth.uid
+        && data.email is string
+        && data.email.size() > 3
+        && data.full_name is string
+        && data.full_name.size() > 0
+        && data.full_name.size() <= 120
+        && data.grade is string
+        && data.section is string
+        && data.status in ['active', 'archived']
+        && data.created_at is timestamp
+        && data.updated_at is timestamp;
+    }
+
+    match /students/{studentRecordId} {
+      allow read: if (isTrustedTeacher() && resource.data.created_by == request.auth.uid)
+        || (request.auth != null && resource.data.email == request.auth.token.email);
+      allow create: if isTrustedTeacher()
+        && validStudentRecord()
+        && request.resource.data.created_at == request.time
+        && request.resource.data.updated_at == request.time;
+      allow update: if isTrustedTeacher()
+        && resource.data.created_by == request.auth.uid
+        && validStudentRecord()
+        && request.resource.data.created_by == resource.data.created_by
+        && request.resource.data.created_at == resource.data.created_at
+        && request.resource.data.updated_at == request.time;
+      allow delete: if false;
+    }
+
+    match /student_assignments/{studentId} {
+      allow read: if isOwner(studentId)
+        || (isTrustedTeacher() && resource.data.teacher_id == request.auth.uid);
+      allow create: if isOwner(studentId)
+        && request.resource.data.keys().hasAll(['student_id', 'teacher_id', 'roster_id', 'created_at'])
+        && request.resource.data.keys().hasOnly(['student_id', 'teacher_id', 'roster_id', 'created_at'])
+        && request.resource.data.student_id == request.auth.uid
+        && request.resource.data.teacher_id is string
+        && request.resource.data.roster_id is string
+        && request.resource.data.created_at == request.time
+        && exists(/databases/$(database)/documents/students/$(request.resource.data.roster_id))
+        && get(/databases/$(database)/documents/students/$(request.resource.data.roster_id)).data.email == request.auth.token.email
+        && get(/databases/$(database)/documents/students/$(request.resource.data.roster_id)).data.created_by == request.resource.data.teacher_id
+        && get(/databases/$(database)/documents/students/$(request.resource.data.roster_id)).data.status == 'active';
+      allow update, delete: if false;
+    }
+
+    function validAssessmentCreate() {
+      let data = request.resource.data;
+      return data.teacher_id == request.auth.uid
+        && data.student_id is string
+        && isAssignedTeacher(data.student_id)
+        && data.status == 'pending'
+        && data.teacher_viewer_ids == [request.auth.uid];
+    }
+
+    match /assessments/{assessmentId} {
+      allow read: if (isTrustedTeacher()
+          && resource.data.teacher_id == request.auth.uid
+          && request.auth.uid in resource.data.teacher_viewer_ids)
+        || (request.auth != null
+          && resource.data.student_id == request.auth.uid
+          && resource.data.status in ['pending', 'validated']);
+      allow create: if isTrustedTeacher() && validAssessmentCreate();
+      allow update: if isTrustedTeacher()
+        && resource.data.teacher_id == request.auth.uid
+        && request.auth.uid in resource.data.teacher_viewer_ids
+        && isAssignedTeacher(resource.data.student_id)
+        && request.resource.data.teacher_id == resource.data.teacher_id
+        && request.resource.data.student_id == resource.data.student_id
+        && request.resource.data.teacher_viewer_ids == resource.data.teacher_viewer_ids
+        && request.resource.data.status in ['pending', 'validated'];
+      allow delete: if false;
+    }
+
+    match /reference_images/{referenceId} {
+      allow read: if request.auth != null
+        && (resource.data.validated == true || isTrustedTeacher());
+      allow create: if isTrustedTeacher()
+        && request.resource.data.teacher_id == request.auth.uid
+        && request.resource.data.validated == false
+        && request.resource.data.validated_by == null
+        && request.resource.data.validated_at == null;
+      allow update: if isTrustedTeacher()
+        && resource.data.teacher_id == request.auth.uid
+        && request.resource.data.teacher_id == resource.data.teacher_id
+        && ((resource.data.validated == false
+              && request.resource.data.validated == false
+              && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['image_url']))
+          || (request.resource.data.validated == true
+              && request.resource.data.validated_by == request.auth.uid
+              && request.resource.data.validated_at == request.time
+              && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['validated', 'validated_by', 'validated_at'])));
+      allow delete: if isTrustedTeacher()
+        && resource.data.teacher_id == request.auth.uid;
+    }
+
+    match /assessment_images/{imageId} {
+      function parentAssessment() {
+        return get(/databases/$(database)/documents/assessments/$(request.resource.data.assessment_id)).data;
+      }
+      function existingParentAssessment() {
+        return get(/databases/$(database)/documents/assessments/$(resource.data.assessment_id)).data;
+      }
+      allow read: if request.auth != null
+        && exists(/databases/$(database)/documents/assessments/$(resource.data.assessment_id))
+        && ((isTrustedTeacher()
+              && existingParentAssessment().teacher_id == request.auth.uid)
+            || (existingParentAssessment().student_id == request.auth.uid
+              && existingParentAssessment().status in ['pending', 'validated']));
+      allow create: if exists(/databases/$(database)/documents/assessments/$(request.resource.data.assessment_id))
+        && request.resource.data.created_at == request.time
+        && ((isTrustedTeacher()
+              && parentAssessment().teacher_id == request.auth.uid
+              && request.resource.data.teacher_id == request.auth.uid)
+            || (request.auth != null
+              && request.resource.data.student_id == request.auth.uid
+              && parentAssessment().student_id == request.auth.uid
+              && parentAssessment().status == 'pending'
+              && request.resource.data.teacher_id == parentAssessment().teacher_id))
+        && parentAssessment().status == 'pending'
+        && parentAssessment().status == 'pending'
+        && request.resource.data.phase in ['starting', 'execution', 'final', 'single'];
+      allow update, delete: if isTrustedTeacher()
+        && exists(/databases/$(database)/documents/assessments/$(resource.data.assessment_id))
+        && existingParentAssessment().teacher_id == request.auth.uid
+        && existingParentAssessment().status == 'pending';
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "background": [
+    {
+      "id": "arnis-history",
+      "title": "A living Filipino martial art",
+      "body": "Arnis, also known by names including Eskrima and Kali, is a Filipino martial art with traditions of weapon-based and empty-hand practice. Its forms and teaching methods vary across regions and schools. This short introduction is a draft for classroom use and should be reviewed by a Filipino Arnis instructor.",
+      "steps": [
+        "Learn the name and local tradition taught by your instructor.",
+        "Practice only with approved training equipment and supervision.",
+        "Show respect for training partners and the cultural roots of the art."
+      ],
+      "image_placeholder": "Historical or cultural classroom image pending review and permission."
+    },
+    {
+      "id": "arnis-filipino-art",
+      "title": "Arnis as a Filipino martial art",
+      "body": "Arnis is recognized as a Filipino martial art and national sport. Training can include coordination, discipline, safe partner practice, and respect. Activities in this app are introductory learning materials, not a substitute for supervised instruction.",
+      "steps": [
+        "Listen to your teacher's safety briefing.",
+        "Use the stance and movement taught in your class.",
+        "Stop immediately when a teacher or partner calls for a pause."
+      ],
+      "image_placeholder": "Instructor-approved Arnis practice image pending."
+    },
+    {
+      "id": "importance-of-arnis",
+      "title": "Why learn Basic Arnis?",
+      "body": "Basic Arnis lessons give students a structured way to practice movement, balance, coordination, focus, and safe cooperation. Skills should be learned progressively, with age-appropriate equipment and teacher supervision.",
+      "steps": [
+        "Warm up before practice.",
+        "Keep safe spacing from other students.",
+        "Reflect on one skill to improve after each lesson."
+      ],
+      "image_placeholder": "Class safety and warm-up image pending."
+    }
+  ],
+  "fundamentals": [
+    {
+      "id": "proper-grip",
+      "title": "Proper grip",
+      "body": "Hold the approved training stick firmly but without unnecessary tension. Keep the thumb wrapped safely and follow the exact grip demonstrated by your teacher. Never point a stick at a person.",
+      "steps": [
+        "Use only an instructor-approved training stick.",
+        "Wrap the fingers around the handle without squeezing hard.",
+        "Keep the stick controlled and pointed away from people."
+      ],
+      "image_placeholder": "Close-up grip demonstration pending instructor review."
+    },
+    {
+      "id": "ready-position",
+      "title": "Ready position",
+      "body": "The ready position is the balanced starting posture your teacher uses for a lesson or sequence. Keep your gaze forward and maintain enough space to move safely.",
+      "steps": [
+        "Stand in the stance shown by your instructor.",
+        "Keep knees relaxed and weight balanced.",
+        "Hold the training stick in the taught safe position."
+      ],
+      "image_placeholder": "Front and side ready-position reference pending."
+    },
+    {
+      "id": "basic-stances",
+      "title": "Basic stances",
+      "body": "Stances create a stable base for movement. Your teacher may demonstrate ready, forward, or other class-specific positions. Do not force a deep stance if it causes pain.",
+      "steps": [
+        "Place your feet as demonstrated.",
+        "Keep your balance centered and knees comfortable.",
+        "Hold still briefly, then return safely to ready position."
+      ],
+      "image_placeholder": "Ready and forward stance reference images pending."
+    },
+    {
+      "id": "basic-strikes",
+      "title": "Basic strikes",
+      "body": "Basic strikes are taught as controlled movement patterns. Practice slowly in an open area, using only the target and direction approved by your teacher.",
+      "steps": [
+        "Begin in the taught ready position.",
+        "Move through the strike path at a controlled speed.",
+        "Return to a balanced final position without striking a person."
+      ],
+      "image_placeholder": "Strike phase images pending teacher validation."
+    },
+    {
+      "id": "basic-blocks",
+      "title": "Basic blocks",
+      "body": "Blocks are defensive movement patterns practiced with safe spacing and supervision. Use the direction and target taught in class; never test a block on another student.",
+      "steps": [
+        "Start from ready position.",
+        "Move into the taught block path with control.",
+        "Recover to a balanced position and wait for the next instruction."
+      ],
+      "image_placeholder": "Block demonstration images pending instructor review."
+    },
+    {
+      "id": "footwork",
+      "title": "Footwork",
+      "body": "Footwork includes controlled forward, backward, side, and triangle steps. Keep movements small enough to maintain balance and avoid collisions.",
+      "steps": [
+        "Check that the practice area is clear.",
+        "Move one step at a time in the direction taught.",
+        "Regain balance before beginning another movement."
+      ],
+      "image_placeholder": "Footwork path diagrams pending."
+    },
+    {
+      "id": "body-coordination",
+      "title": "Body coordination",
+      "body": "Coordination brings stance, footwork, and upper-body movement together. Learn each part slowly before practicing a complete sequence.",
+      "steps": [
+        "Practice the stance on its own.",
+        "Add one footwork pattern at a slow pace.",
+        "Combine the movements only when your teacher says it is safe."
+      ],
+      "image_placeholder": "Combined movement sequence images pending."
+    }
+  ]
+}

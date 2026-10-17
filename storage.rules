@@ -1,0 +1,46 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function trustedTeacher() {
+      return signedIn() && request.auth.token.role == 'teacher';
+    }
+
+    function validImageUpload() {
+      return request.resource != null
+        && request.resource.size < 8 * 1024 * 1024
+        && request.resource.contentType.matches('image/.*');
+    }
+
+    match /assessment-images/{assessmentId}/{studentId}/{fileName} {
+      function assessment() {
+        return firestore.get(/databases/(default)/documents/assessments/$(assessmentId)).data;
+      }
+
+      allow read: if signedIn()
+        && ((trustedTeacher() && assessment().teacher_id == request.auth.uid)
+          || (request.auth.uid == studentId
+            && assessment().student_id == studentId
+            && assessment().status in ['pending', 'validated']));
+      allow write: if assessment().student_id == studentId
+        && assessment().status == 'pending'
+        && ((trustedTeacher() && assessment().teacher_id == request.auth.uid)
+          || (signedIn() && request.auth.uid == studentId))
+        && validImageUpload();
+    }
+
+    match /reference-images/{referenceId}/{fileName} {
+      function referenceImage() {
+        return firestore.get(/databases/(default)/documents/reference_images/$(referenceId)).data;
+      }
+
+      allow read: if signedIn() && (trustedTeacher() || referenceImage().validated == true);
+      allow write: if trustedTeacher()
+        && referenceImage().teacher_id == request.auth.uid
+        && validImageUpload();
+    }
+  }
+}

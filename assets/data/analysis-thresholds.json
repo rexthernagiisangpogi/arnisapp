@@ -1,0 +1,33 @@
+{
+  "quality": {
+    "minimumWidthPx": 640,
+    "minimumHeightPx": 480,
+    "minimumLandmarkVisibility": 0.45,
+    "minimumVisibleBodyFraction": 0.35,
+    "minimumMeanLuminance": 32,
+    "maximumMeanLuminance": 228,
+    "minimumSharpnessVariance": 14,
+    "requiredLandmarks": [
+      "leftShoulder",
+      "rightShoulder",
+      "leftHip",
+      "rightHip",
+      "leftKnee",
+      "rightKnee",
+      "leftAnkle",
+      "rightAnkle"
+    ]
+  },
+  "comparison": {
+    "angleToleranceDegrees": 18,
+    "spacingToleranceRatio": 0.2,
+    "alignmentToleranceRatio": 0.12,
+    "scoreBands": [0.5, 1, 1.5]
+  },
+  "capture": {
+    "maximumImageBytes": 8000000,
+    "maximumDimensionPx": 1600,
+    "minimumBytes": 12000,
+    "maximumPhases": 3
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "draft_notice": "Draft descriptors. PE teachers and Arnis instructors must review these before they are used for grading.",
+  "rounding_rule": "Calculate the arithmetic mean and round to the nearest whole number; halves round up.",
+  "levels": {
+    "1": "Beginning",
+    "2": "Developing",
+    "3": "Proficient",
+    "4": "Advanced"
+  },
+  "descriptor_templates": {
+    "1": "Needs substantial guidance with {focus}; the movement is not yet reliable or safe without support.",
+    "2": "Shows {focus} inconsistently and needs reminders or corrections.",
+    "3": "Shows {focus} correctly most of the time with only minor variation.",
+    "4": "Shows {focus} confidently and consistently, with control and awareness."
+  },
+  "areas": [
+    {
+      "id": "accuracy",
+      "name": "Accuracy of Strikes",
+      "criteria": [
+        {
+          "id": "strike-position",
+          "name": "Strike Position",
+          "focus": "the taught strike position"
+        },
+        {
+          "id": "strike-direction",
+          "name": "Strike Direction",
+          "focus": "the instructed strike direction"
+        },
+        {
+          "id": "strike-angle",
+          "name": "Strike Angle",
+          "focus": "the arm angle demonstrated in class"
+        },
+        {
+          "id": "strike-alignment",
+          "name": "Body Alignment",
+          "focus": "balanced body alignment during the technique"
+        },
+        {
+          "id": "technique-execution",
+          "name": "Technique Execution",
+          "focus": "a controlled strike sequence"
+        }
+      ]
+    },
+    {
+      "id": "footwork-stance",
+      "name": "Footwork and Stance",
+      "criteria": [
+        {
+          "id": "foot-placement",
+          "name": "Foot Placement",
+          "focus": "the demonstrated foot placement"
+        },
+        { "id": "stance", "name": "Stance", "focus": "a stable class stance" },
+        {
+          "id": "balance",
+          "name": "Balance",
+          "focus": "balance through the movement"
+        },
+        {
+          "id": "movement-pattern",
+          "name": "Movement Pattern",
+          "focus": "the taught movement pattern"
+        },
+        {
+          "id": "body-stability",
+          "name": "Body Stability",
+          "focus": "a stable and controlled body position"
+        }
+      ]
+    },
+    {
+      "id": "coordination",
+      "name": "Body Coordination",
+      "criteria": [
+        {
+          "id": "upper-coordination",
+          "name": "Upper Body Coordination",
+          "focus": "coordinated upper-body movement"
+        },
+        {
+          "id": "lower-coordination",
+          "name": "Lower Body Coordination",
+          "focus": "coordinated lower-body movement"
+        },
+        {
+          "id": "coordination-alignment",
+          "name": "Body Alignment",
+          "focus": "alignment of the upper and lower body"
+        },
+        {
+          "id": "coordination-balance",
+          "name": "Balance",
+          "focus": "balance while coordinating the movement"
+        },
+        {
+          "id": "synchronization",
+          "name": "Movement Synchronization",
+          "focus": "timing between stance, footwork, and technique"
+        }
+      ]
+    },
+    {
+      "id": "overall",
+      "name": "Overall Skill Execution",
+      "criteria": [
+        {
+          "id": "overall-accuracy",
+          "name": "Accuracy Integration",
+          "focus": "accurate execution of the assessed technique"
+        },
+        {
+          "id": "overall-stance",
+          "name": "Stance and Footwork Integration",
+          "focus": "stable stance and appropriate footwork"
+        },
+        {
+          "id": "overall-coordination",
+          "name": "Coordination Integration",
+          "focus": "coordinated upper- and lower-body movement"
+        },
+        {
+          "id": "overall-balance",
+          "name": "Balance",
+          "focus": "balance through the complete skill"
+        },
+        {
+          "id": "overall-technique",
+          "name": "Overall Technique",
+          "focus": "a controlled and safe overall technique"
+        }
+      ]
+    }
+  ]
+}

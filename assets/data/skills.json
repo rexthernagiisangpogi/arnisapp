@@ -1,0 +1,197 @@
+[
+  {
+    "id": "strike-1",
+    "category": "Strikes",
+    "name": "Strike 1",
+    "description": "Introductory strike pattern; follow the class demonstration.",
+    "instructions": "Review the start, execution, and final reference phases. Practice slowly with supervision.",
+    "is_multi_phase": true,
+    "phases": ["starting", "execution", "final"],
+    "relevant_areas": [
+      "Accuracy of Strikes",
+      "Footwork and Stance",
+      "Body Coordination",
+      "Overall Skill Execution"
+    ]
+  },
+  {
+    "id": "strike-2",
+    "category": "Strikes",
+    "name": "Strike 2",
+    "description": "Introductory strike pattern; follow the class demonstration.",
+    "instructions": "Review the start, execution, and final reference phases. Practice slowly with supervision.",
+    "is_multi_phase": true,
+    "phases": ["starting", "execution", "final"],
+    "relevant_areas": [
+      "Accuracy of Strikes",
+      "Footwork and Stance",
+      "Body Coordination",
+      "Overall Skill Execution"
+    ]
+  },
+  {
+    "id": "strike-3",
+    "category": "Strikes",
+    "name": "Strike 3",
+    "description": "Introductory strike pattern; follow the class demonstration.",
+    "instructions": "Review the start, execution, and final reference phases. Practice slowly with supervision.",
+    "is_multi_phase": true,
+    "phases": ["starting", "execution", "final"],
+    "relevant_areas": [
+      "Accuracy of Strikes",
+      "Footwork and Stance",
+      "Body Coordination",
+      "Overall Skill Execution"
+    ]
+  },
+  {
+    "id": "strike-4",
+    "category": "Strikes",
+    "name": "Strike 4",
+    "description": "Introductory strike pattern; follow the class demonstration.",
+    "instructions": "Review the start, execution, and final reference phases. Practice slowly with supervision.",
+    "is_multi_phase": true,
+    "phases": ["starting", "execution", "final"],
+    "relevant_areas": [
+      "Accuracy of Strikes",
+      "Footwork and Stance",
+      "Body Coordination",
+      "Overall Skill Execution"
+    ]
+  },
+  {
+    "id": "basic-blocks",
+    "category": "Blocks",
+    "name": "Basic blocks",
+    "description": "Defensive movement patterns from the class lesson.",
+    "instructions": "Use safe spacing. Follow the block direction demonstrated by your teacher.",
+    "is_multi_phase": true,
+    "phases": ["starting", "execution", "final"],
+    "relevant_areas": [
+      "Footwork and Stance",
+      "Body Coordination",
+      "Overall Skill Execution"
+    ]
+  },
+  {
+    "id": "ready-stance",
+    "category": "Stances",
+    "name": "Ready stance",
+    "description": "Balanced starting position used in the class sequence.",
+    "instructions": "Hold the position shown by your instructor without forcing your joints.",
+    "is_multi_phase": false,
+    "phases": ["single"],
+    "relevant_areas": ["Footwork and Stance", "Overall Skill Execution"]
+  },
+  {
+    "id": "forward-stance",
+    "category": "Stances",
+    "name": "Forward stance",
+    "description": "Forward stance as demonstrated in the class lesson.",
+    "instructions": "Set your feet and weight as shown by your teacher; stop if uncomfortable.",
+    "is_multi_phase": false,
+    "phases": ["single"],
+    "relevant_areas": ["Footwork and Stance", "Overall Skill Execution"]
+  },
+  {
+    "id": "forward-step",
+    "category": "Footwork",
+    "name": "Forward step",
+    "description": "Controlled forward step with balance recovery.",
+    "instructions": "Move one step into clear space and regain balance before continuing.",
+    "is_multi_phase": true,
+    "phases": ["starting", "execution", "final"],
+    "relevant_areas": [
+      "Footwork and Stance",
+      "Body Coordination",
+      "Overall Skill Execution"
+    ]
+  },
+  {
+    "id": "backward-step",
+    "category": "Footwork",
+    "name": "Backward step",
+    "description": "Controlled backward step with balance recovery.",
+    "instructions": "Check behind you, move one step, and regain balance before continuing.",
+    "is_multi_phase": true,
+    "phases": ["starting", "execution", "final"],
+    "relevant_areas": [
+      "Footwork and Stance",
+      "Body Coordination",
+      "Overall Skill Execution"
+    ]
+  },
+  {
+    "id": "side-step",
+    "category": "Footwork",
+    "name": "Side step",
+    "description": "Controlled side step with safe spacing.",
+    "instructions": "Check your side space, step laterally, and return to a balanced position.",
+    "is_multi_phase": true,
+    "phases": ["starting", "execution", "final"],
+    "relevant_areas": [
+      "Footwork and Stance",
+      "Body Coordination",
+      "Overall Skill Execution"
+    ]
+  },
+  {
+    "id": "triangle-step",
+    "category": "Footwork",
+    "name": "Triangle stepping",
+    "description": "Introductory triangle movement pattern taught by your instructor.",
+    "instructions": "Follow your teacher's foot placement slowly; do not cross into another student's space.",
+    "is_multi_phase": true,
+    "phases": ["starting", "execution", "final"],
+    "relevant_areas": [
+      "Footwork and Stance",
+      "Body Coordination",
+      "Overall Skill Execution"
+    ]
+  },
+  {
+    "id": "strike-stance",
+    "category": "Coordination",
+    "name": "Strike + stance",
+    "description": "A class-approved strike coordinated with a stable stance.",
+    "instructions": "Combine the movement only after each part is practiced separately.",
+    "is_multi_phase": true,
+    "phases": ["starting", "execution", "final"],
+    "relevant_areas": [
+      "Accuracy of Strikes",
+      "Footwork and Stance",
+      "Body Coordination",
+      "Overall Skill Execution"
+    ]
+  },
+  {
+    "id": "strike-footwork",
+    "category": "Coordination",
+    "name": "Strike + footwork",
+    "description": "A class-approved strike coordinated with one footwork pattern.",
+    "instructions": "Practice slowly in a clear area and follow the sequence demonstrated by your teacher.",
+    "is_multi_phase": true,
+    "phases": ["starting", "execution", "final"],
+    "relevant_areas": [
+      "Accuracy of Strikes",
+      "Footwork and Stance",
+      "Body Coordination",
+      "Overall Skill Execution"
+    ]
+  },
+  {
+    "id": "complete-sequence",
+    "category": "Coordination",
+    "name": "Complete sequence",
+    "description": "Introductory combination of stance, strike, and footwork.",
+    "instructions": "Use the teacher-led sequence only. Stop if spacing or balance becomes unsafe.",
+    "is_multi_phase": true,
+    "phases": ["starting", "execution", "final"],
+    "relevant_areas": [
+      "Accuracy of Strikes",
+      "Footwork and Stance",
+      "Body Coordination",
+      "Overall Skill Execution"
+    ]
+  }
+]
